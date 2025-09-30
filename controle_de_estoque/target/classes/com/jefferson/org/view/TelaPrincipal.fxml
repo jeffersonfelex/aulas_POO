@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.jefferson.org.controller.TelaPrincipalController"
+      prefHeight="400.0" prefWidth="600.0">
+
+   <children>
+      <!-- Título -->
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #3F8EFc;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Inventário de produtos" textFill="#2e2e2e">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+
+      <!-- Tabela de produtos -->
+      <HBox prefHeight="279.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tableViewProdutos" prefHeight="232.0" prefWidth="600.0" style="-fx-background-color: #F5F7FA;">
+               <columns>
+                  <TableColumn fx:id="tableColumnNome" prefWidth="200.0" text="Nome do Produto" />
+                  <TableColumn fx:id="tableColumnPreco" prefWidth="200.0" text="Preço (R$)" />
+                  <TableColumn fx:id="tableColumnQuantidade" prefWidth="200.0" text="Quantidade" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </HBox>
+
+      <!-- Valor total -->
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #3F8EFc;">
+         <children>
+            <Label fx:id="labelValorTotal" contentDisplay="CENTER" text="Valor total no estoque: R$ 0,00" textFill="#222121">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
