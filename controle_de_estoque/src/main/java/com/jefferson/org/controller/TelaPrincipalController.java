@@ -47,12 +47,19 @@ public class TelaPrincipalController implements Initializable
 
     private void carregarProdutos() 
     {
-        Produto[] produtosArray = 
+        Produto[] produtosArray =
         {
-            new Produto("Notebook", 3500.00, 5),
-            new Produto("Mouse", 80.00, 20),
-            new Produto("Teclado", 150.00, 10),
-            new Produto("Monitor", 1200.00, 7)
+                new Produto("Notebook", 3500.00, 5),
+                new Produto("Mouse", 80.00, 20),
+                new Produto("Teclado", 150.00, 10),
+                new Produto("Monitor 24\"", 1200.00, 7),
+                new Produto("Monitor 27\"", 1600.00, 4),
+                new Produto("Impressora", 900.00, 3),
+                new Produto("Headset", 250.00, 15),
+                new Produto("Cadeira Gamer", 1100.00, 2),
+                new Produto("Webcam", 200.00, 8),
+                new Produto("HD Externo 1TB", 400.00, 6)
+
         };
 
         listaProdutos = FXCollections.observableArrayList(produtosArray);

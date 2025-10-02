@@ -1,10 +1,10 @@
 package com.jefferson.org;
 
+import javafx.fxml.FXML;
+
 import java.io.IOException;
 
 import com.jefferson.org.principal.Main;
-
-import javafx.fxml.FXML;
 
 public class SecondaryController 
 {

@@ -3,7 +3,6 @@ package com.jefferson.org;
 import java.io.IOException;
 
 import com.jefferson.org.principal.Main;
-
 import javafx.fxml.FXML;
 
 public class PrimaryController 
